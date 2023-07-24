@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images.jpeg);
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    background-color: aqua;
+    width: 100%;
+}
+
+.logo-group {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 65px;
+}
+
+.nav-logo-text {
+    margin-left: -1rem;
+    font-size: 40px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2rem;
+    padding: 0 4em;
+}
+
+.nav-items div {
+    transition: all 0.5s;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.nav-items div a {
+    color: black;
+}
+
+
+.nav-items div:hover {
+    transition: all 0.8s;
+    color: var(blue);
+    font-weight: bold;
+
+}
+
+@media (max-width:1500px) {
+    .nav-items {
+        padding: 0 8em;
+    }
+}
+
+@media (max-width:1000px) {
+    .nav-items {
+        display: none;
+    }
+}
+
+img {
+    width: 1200px;
+    padding: 20px;
+    margin: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contentForm {
+    margin: 60px;
+    padding: 20px;
+    border: solid black;
+    box-sizing: border-box;
+    box-shadow: 20px 30px 30px black;
+    border-radius: 15px;
+    background-color: powderblue;
+
+
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#savedContent {
+    margin-top: 100px;
+    border-top: 1px solid #ccc;
+    color: #fff;
+    padding-top: 20px;
+    width: auto;
+    margin-left: 30px;
+    
+}
+
+#savedContent h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    list-style-type: decimal-leading-zero;
+}
+
+#savedContent h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#savedContent p {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#savedContent img {
+    font-size: 30px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
